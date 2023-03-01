@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;;
+  font-size: 16px;
+  line-height: 30px;
+  background-color: rgb(255, 255, 255);
+  font-weight:200;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+article {
+  padding:0 16px;
+}
+
+section{
+  margin: 16px;
+  padding: 16px;
+}
+
+/*MENU DE NAVEGACION*/
+
+#sobre-mi nav{
+  position: fixed;
+  margin-left: 60px;
+  background-color: #ddd233;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 99;
+  display: none;
+}
+#sobre-mi nav a{
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+#sobre-mi .barra-nav{
+  position: fixed;
+  background-color: #ddd233;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  cursor: pointer;
+  transition: .3s;
+}
+#sobre-mi .barra-nav:hover{
+  box-shadow: 0 0 35px #fff;
+}
+/*FIN MENU DE NAVEGACION*/
+
+header, main, footer {
+  margin: 0 auto;
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+  background-image: url("/img/cvfondo.jpg");
+  background-size: cover;
+  background-position: fixed;
+  color: white;
+}
+
+header section {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+header img {
+  border-radius: 15%;
+  max-width: 215px;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 16px 0;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-style: italic;
+  text-decoration: underline;
+
+}
+
+h3, h4 {
+  font-weight: bold
+  ;
+}
+
+main {
+  max-width: 1140px;
+}
+
+main section:not(:last-child) {
+  border-bottom: 2px solid #101e9b;
+}
+
+.fab {
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  margin: 5px;
+  text-align: center;
+}
+
+a .fab {
+  color: white;
+}
+
+
+.curso, #educacion article, #experiencia article, #habilidades div{
+padding: 15px;
+}
+
+.curso, .habilidad {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.curso .titulo-curso {
+  color: #101e9b;
+  -ms-flex: 0 0 33.3%;
+  flex: 0 0 33.3%;
+  max-width: 33%;
+  
+}
+
+.curso .descripcion {
+  -ms-flex: 0 0 66.6%;
+  flex: 0 0 66.6%;
+  max-width: 66.6%;
+}
+
+.curso .descripcion p {
+  padding-left: 1em;
+}
+
+.habilidad .columna {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.habilidad .columna ul, ul.descripcion-trabajo {
+  list-style-type: none;
+}
+
+.habilidad .columna ul > li:before {
+  content: "►";
+  padding-right: 0.5em;
+  color: #101e9b;
+}
+
+
+.instituto span, .titulo-trabajo span {
+  color: #101e9b;
+  text-decoration: underline;
+}
+
+ul.descripcion-trabajo li:before{
+  content: "✔";
+  padding-right: 0.5em;
+  color: #101e9b;
+}
+
+
+
+
+/* SECCIÓN DE CONTACTO */
+
+
+.contacto {
+  margin-top: 2rem;
+}
+
+.contacto h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contenedor-formulario-contacto {
+  max-width: 40.75rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px #9c941c;
+  background-color: rgb(255, 255, 255);
+}
+
+.contenedor-formulario-contacto label {
+  line-height: 2.7em;
+  font-weight: 700;
+  color: #101e9b;
+}
+
+.contenedor-formulario-contacto textarea {
+  min-height: 6.25rem;
+  font-size: 14px;
+}
+
+.contenedor-formulario-contacto .campo-ingreso {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  border: 2px outset #101e9b;
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.campo-ingreso::placeholder {
+  padding: 0.5rem;
+  color: #050505;
+}
+
+.enviar {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: rgb(192, 203, 204);
+  border: 2px solid #101e9b;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.enviar:hover {
+  background-color: #101e9b;
+  border: 2px solid #101e9b;
+  cursor: pointer;
+}
+
+.campo-ingreso {
+  background-color: rgb(192, 203, 204);
+}
+
+
+
+
+footer {
+ padding: 1em 1.5em;
+ background: #101e9b;
+ color: white;
+ text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .curso {
+    display: block;
+  }
+
+  .curso .titulo-curso, .curso .descripcion {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  header {
+    background-image: url("/img/cvfondo-responsivo.jpg");
+    background-size: cover;
+  }
+
+  .habilidad {
+    display: block;
+  }
+
+  .habilidad .columna {
+    max-width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+}

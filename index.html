@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CV - Maximiliano Voelkly</title>
+  <meta name="description" content="Proyecto final para el curso de FrontEnd de TICMAS">
+  <link rel="icon" href="./img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header id="sobre-mi">
+    <div class="barra-nav" onclick="mostrarOcultarMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <nav id="nav" class="nav">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#educacion">Educación</a>
+      <a href="#Cursos">Cursos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+
+    
+    <div>
+      <img src="./img/Foto-CV.png" alt="Foto de frente de Maximiliano Voelkly" />
+    </div>
+    <h1>Maximiliano Voelkly</h1>
+    <section>
+     
+      <p>¡Hola! Soy Maximiliano Voelkly. Apasionado por el mundo de la programación y futuro Ingeniero Eléctrico. Mi objetivo es desarrollarme y crecer profesionalmente, brindar los servicios y conocimientos adquiridos en mi preparación académica y profesional con el fin de lograr la superación personal.</p>
+  
+      <!--Correspondientemente, en href deberían ir los links que conducen a los perfiles de Maximiliano Voelkly
+      en cada red social, pero intencionalmente se colocan los links de las páginas principales.
+      Además obligo a que lo abra en una pestaña nueva--> 
+      <a href="https://www.facebook.com" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.twitter.com" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://github.com" target="_blank">
+        <i class="fab fa-github-alt"></i>
+      </a>
+      <a href="https://www.linkedin.com" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </section>
+  </header>
+
+
+  <main>
+   
+    <!-- SECCIÓN EXPERIENCIA-->
+    <section id="experiencia">
+      <h3>experiencia</h3>
+      <article>
+
+        <div class="titulo-trabajo">
+          <span>06/2018 - actualidad:</span> <strong>Sobrero Muebles</strong><br> 
+          <strong>Puesto:</strong> Gerente.
+        </div>
+        <div>
+          <p><strong>Actividades:</strong></p> 
+          <ul class="descripcion-trabajo">
+            <li>Puesta a punto, operación y mantenimiento de controles numéricos, de 3 y 5 ejes.</li>
+            <li>Liquidaciones de sueldos.</li>
+            <li>Gestión de seguros.</li>
+            <li>Control de stock y compra de insumos.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article>
+        <div class="titulo-trabajo">
+          <span>03/2018 - 06/2018:</span> <strong>HAIZEA - SICA</strong><br> 
+          <strong>Puesto:</strong> Operario de mantenimiento.
+        </div>
+        <div>
+          <p><strong>Actividades:</strong></p> 
+          <ul class="descripcion-trabajo">
+            <li>Tareas de mantenimiento eléctrico en medios de fabricación y máquinas</li>
+            <li>Gestión de insumos.</li>
+          </ul>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- SECCIÓN EDUCACIÓN-->
+    <section id="educacion">
+      <h3>Formación académica</h3>
+      <article>
+        <div class='instituto'>
+          <span>2012-2018</span> <strong>Facultad Tecnológica Nacional, Facultad Regional Santa Fe.</strong>
+        </div>
+        <div class="descripcion">
+          Ingeniería Eléctrica. Adeudando Proyecto Final de Carrera.
+        </div>
+      </article>
+      <article>
+        <div class='instituto'>
+          <span>2007-2011</span> <strong>Escuela de Educación Técnica Nº 455 "General Don José de San Martin".</strong>
+        </div>
+        <div class="descripcion">
+          <strong>Título:</strong>  Técnico en Equipos e Instalaciones Electromecánicas"
+        </div>
+      </article>
+    </section>    
+    
+    
+    <!-- SECCIÓN CURSOS-->
+    <section id="Cursos">
+      <h3>Cursos y Formación complementaria</h3>
+      <article class='curso'>
+        <div class='titulo-curso'>
+          <h4>Mantenimiento de transformadores</h4>
+        </div>
+        <div class="descripcion">
+          <p>Realizado en la UTN - FRSF. Caracteristicas de diseño de un transformador, sobrecargas, accesorios, protecciones propias, conmutadores, ensayos y mantenimientos. Nota: 10.</p>
+        </div>
+      </article>
+      <article class='curso'>
+        <div class='titulo-curso'>
+          <h4>Automatización y robótica industrial</h4>
+        </div>
+        <div class="descripcion">
+          <p>Realizado en la UTN - Facultad Regional General Pacheco. Seguridad industrial, movimiento manual, programación On Line, Lenguaje Rapid y Parametrización de robots ABB.</p>
+        </div>
+      </article>
+      <article class='curso'>
+        <div class='titulo-curso'>
+          <h4>Desarrollo en CAD - CAM</h4>
+        </div>
+        <div class="descripcion">
+          <p>Realizado en la EET Nº 455. SOLID - WORK básico. Diseño mécanico e industrial.</p>
+        </div>
+      </article>
+      
+    </section>
+
+
+    <!-- SECCIÓN HABILIDADES-->
+    <section id="habilidades">
+      <h3>Habilidades</h3>
+      <div class='habilidad'>
+        <div class='columna'>
+          <h4>Manejo avanzado</h4>
+          <ul>
+            <li>Microsoft Word, Excel y Power Point</li>
+            <li>ATP Draw</li>
+            <li>PSS/E</li>
+            <li>Matlab</li>
+          </ul>
+        </div>
+        <div class='columna'>
+          <h4>Manejo básico</h4>
+          <ul>
+            <li>Microsoft Project</li>
+            <li>Adobe Illustrator</li>
+            <li>LAbVIEW</li>
+            <li>Autocad</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Idiomas</h4>
+          <p>🇪🇸 Español - Idioma nativo</p>
+          <p>🇪n English - Nivel medio</p>          
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECCIÓN CONTACTO-->
+    <section id="contacto" class="contacto">
+      <h2>Ponte en contacto conmigo</h2>
+      <div class="contenedor-formulario-contacto">
+        <div>
+          <form action="https://formspree.io/f/xyylnggw" method="POST">
+            <div>
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                name="nombre"
+                placeholder="Ingrese su nombre"
+                class="campo-ingreso"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Ingrese su e-mail"
+                class="campo-ingreso"
+                required
+              />
+            </div>
+            <div>
+              <label for="mensaje">Message</label>
+              <textarea
+                cols="60"
+                rows="10"
+                placeholder="Ingrese el mensaje"
+                name="mensaje"
+                class="campo-ingreso"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Enviar"
+              class="enviar"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+  
+  </main>
+
+  <!-- PIE DE PÁGINA-->
+  <footer>
+    <p>Creado por: Voelkly, Maximiliano <br> © Copyright 2023 </p>
+  </footer>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>
